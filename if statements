@@ -53,4 +53,38 @@ int main(void)
         printf("the number is odd");    
     return(0);
 }
-
+>>>>>>>>>>>>>>>>>>> average marks with 5 inputs 
+#include <stdio.h>
+int main(void)
+{
+    int chem,phy,bio,comp,math,average;
+    printf("Enter your Chemistry mark:\n");
+    scanf("%d",&chem);
+    printf("Enter your physics mark:\n");
+    scanf("%d",&phy);
+    printf("Enter your biology mark:\n");
+    scanf("%d",&bio);
+    printf("Enter your computer mark:\n");
+    scanf("%d",&comp);
+    printf("Enter your Chemistry mark:\n");
+    scanf("%d",&math);
+    average = (chem+phy+bio+comp+math)/5;
+    if (average>=90){
+        printf("Your grade is an A with percentage %d.",average);
+    }
+    else if (average>=80){
+        printf("Your grade is an B with percentage %d.",average);
+    }
+    else if (average>=70){
+        printf("Your grade is an C with percentage %d.",average);
+    }
+    else if (average>=60){
+        printf("Your grade is an D with percentage %d.",average);
+    }
+    else if (average>=40){
+        printf("Your grade is an A with percentage %d.",average);
+    }
+    else
+        printf("Your grade is an F with percentage %d.",average);
+    return(0);
+}
