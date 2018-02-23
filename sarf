@@ -1,0 +1,33 @@
+#include <stdio.h>
+int main(void) 
+{  
+    int n,twork,overtime,regular,earned,h_ot,money;
+    n=1;
+    regular= 10;
+    overtime=12;
+    
+    
+    while(n<=10)
+    
+    {
+        printf("Enter the number of hours worked: \n");
+        scanf("%d",&twork);
+        n=n+1;
+        if (twork>40)
+        {
+            h_ot=twork-40;
+            printf("This person has worked %d hours overtime.\n",h_ot);
+            money=(10*40)+(h_ot*12);
+            printf("This person has earned: $%d\n",money);
+        }
+        else
+            printf("This person has no over time pay.\n");
+            money=twork*10;
+            printf("This person has earned %d\n",money);
+
+        
+    }   
+        
+    return(0);   
+} 
+ 
