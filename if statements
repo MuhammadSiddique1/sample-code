@@ -120,3 +120,31 @@ int main()
         printf("The grade is F, with mark: %d",average);
     return(0);
 }
+
+
+#include <stdio.h>
+
+int main()
+{
+    int a1,a2,t1,t2,av_a,av_t;
+    printf("Enter 2 assignment marks:\n");
+    scanf("%d%d",&a1,&a2);
+    printf("\nEnter 2 test marks:\n");
+    scanf("%d%d",&t1,&t2);
+    av_a=(a1+a2)/2;
+    av_t=(t1+t2)/2;
+    printf("\nYour assignment average is:%d, test mark is:%.1d",av_a,av_t);
+    
+    if((av_a+av_t)>=80){
+        printf("")
+    }
+    
+    
+    
+    
+    
+    return 0;
+}
+
+
+
