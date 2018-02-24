@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a1,a2,t1,t2,av_a,av_t,av;
+    printf("Enter 2 assignment marks:\n");
+    scanf("%d%d",&a1,&a2);
+    printf("\nEnter 2 test marks:\n");
+    scanf("%d%d",&t1,&t2);
+    av_a=(a1+a2)/2;
+    av_t=(t1+t2)/2;
+    av=(a1+a2+t1+t2)/4;
+    printf("\nYour assignment average is:%d, test mark is:%.1d",av_a,av_t);
+
+    if (t1 ){
+        if(av>=80){
+        printf("\nYour mark is a A:");
+            if(a1<50||a2<50){
+                printf("Your actual mark is B because you failed one of the sections");
+                }
+            }
+        else if(av>=70){
+            printf("Your mark is a B:\n");
+            if(a1<50||a2<50){
+                printf("Your actual mark is C because you failed one of the assignments");
+                }
+            }
+        else if(av>=60){
+            printf("Your mark is a C:\n");
+            if(a1<50||a2<50){
+                printf("Your actual mark is D because you failed one of the assignments");
+                }
+            }
+        else if(av>=50){
+            printf("Your mark is a D:\n");
+            if(a1<50||a2<50){
+                printf("Your actual mark is F because you failed one of the assignements");
+                }
+            }
+        else
+            printf("You mark is a F:");
+    }
+    return 0;
+}
