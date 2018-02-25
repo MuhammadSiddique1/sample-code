@@ -1,3 +1,79 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>LAB 4 made correct
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int a1,a2,t1,t2,av_a,av_t,total;
+    printf("Enter 2 assignment marks:\n");
+    scanf("%d%d",&a1,&a2);
+    printf("Enter 2 Test marks:\n");
+    scanf("%d%d",&t1,&t2);
+    av_a=(a1+a2)/2;
+    av_t=(t1+t2)/2;
+    total=(a1+a2+t1+t2)/4;
+    printf("\n%d %d %d %d\n",a1,a2,t1,t2);
+
+    if(t1<50||t2<50){
+        printf("Your grade is an F, you have failed one of the tests.");
+    }
+    else
+        if(total>=80)
+        {
+            if(a1<50||a2<50)
+            {
+             printf("Your Mark is a B.");
+            }
+            else
+                printf("Your mark is a A.");
+         }
+        else if(total>=70)
+        {
+            if(a1<50||a2<50)
+            {
+             printf("Your Mark is a C.");
+            }
+            else
+                printf("Your mark is a B.");
+         }
+        else if(total>=60)
+        {
+            if(a1<50||a2<50)
+            {
+             printf("Your Mark is a D.");
+            }
+            else
+                printf("Your mark is a C.");
+         }
+        else if(total>=50)
+        {
+            if(a1<50||a2<50)
+            {
+             printf("You have failed and your mark is a F.");
+            }
+            else
+                printf("Your mark is a D.");
+         }
+        else
+            printf("Your Mark is a B.");
+
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #include <stdio.h>
 #include <stdlib.h>
 
