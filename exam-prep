@@ -1,0 +1,57 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Commented code if for n numbers in fib sequence, and after is bus code for people
+
+#include<stdio.h>
+#include<math.h>
+
+
+int main(void){
+/*
+	int n,n1=0,n2=1,next,i,counter=0;
+	printf("Enter the number of fibonacci numbers you would like:\n");
+	scanf("%d",&n);
+	
+	for(i=1;i<=n;i=i+1){
+		counter=counter+1;	  
+		printf("%d\n",n1);
+		next=n1+n2;
+		n1=n2;
+		n2=next;
+	
+	}
+	printf("\n%d",counter);
+
+
+*/	  
+	int people,bus,remainder;
+	double buses;
+	do{
+	printf("Enter the number of people that will be attending:\n");
+	scanf("%d",&people);
+	}
+		
+	while(people<=0);
+		remainder=people%41;
+		buses=ceil(people/41);
+		
+		if(people>41){
+			printf("Number of buses required are %.1lf\n",buses);
+			printf("Number of people left are %d",remainder);  
+		}
+		
+		else if (people==41){
+			printf("Number of buses required are 1.\n");
+			printf("The bus contains exactly 41 people");
+			}
+		
+		
+		else 
+			{
+			printf("Number of buses required are 1.");
+			printf("Number of people in this bus are %d",remainder);		
+			}
+
+	return(0);
+
+
+
+}
