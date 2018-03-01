@@ -26,7 +26,7 @@ int main(void){
 	}
 	while(people<=0);
 		remainder=people%41;
-		buses=ceil(people/41);
+		buses=ceil((double)people/41);
 		if(people>41){
 			printf("Number of buses required are %.1lf\n",buses);
 			printf("Number of people left are %d",remainder);  
